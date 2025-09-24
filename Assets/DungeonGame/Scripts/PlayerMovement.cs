@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)){
-            transform.position = new Vector3(0,0,0);    
+            animator.SetTrigger("Attack");    
         }
     }
 
